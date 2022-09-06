@@ -1,0 +1,26 @@
+
+
+  <div class="row">
+
+    <h3 class="text-center text-info">Details of Product :  {{productToDispaly?.Product?.Title}}</h3>
+    <table class="table">
+       <tr>
+        <td>Price</td>
+        <td>{{productToDispaly?.Price}}</td>
+       </tr>
+       <tr>
+        <td>Distributor</td>
+        <td>{{productToDispaly?.Distributor}}</td>
+       </tr>
+       <tr>
+        <td>Quantity</td>
+        <td>
+          <input class="forms-control" type="number" [(ngModel)]='quantity' />
+        </td>
+       </tr>
+       <tr>
+        <button class="btn btn-danger" (click)="closeProductDetail()">Close</button>
+        <button class="btn btn-danger" (click)="saveProductDetail()">Save</button>
+       </tr>
+    </table>
+  </div>
